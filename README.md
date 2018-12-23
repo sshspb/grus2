@@ -15,9 +15,7 @@
 
 Согласование логических уровней ТТЛ и КМОП микросхем выполнено на резисторном делителе.
 
-![5V-logic-levels](images/5V-logic-levels.png)
-
-![3V-logic-levels](images/3V-logic-levels.png)
+![logic-levels](images/logic-levels.png)
 
 ## Корпус
 Всю электронную начинку поместили в корпус G221 производства Gainta Industries Ltd.
