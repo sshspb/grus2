@@ -49,6 +49,10 @@ RJ-14 6P4C  DS18B20      (прямой раскладки)
 
 ## GSM модуль SIM800L
 
+- https://simcom.ee/documents/SIM800L/SIM800L%28MT6261%29_Hardware%20Design_V1.01.pdf
+ 
+- https://simcom.ee/documents/SIM800H/SIM800%20Series_AT%20Command%20Manual_V1.10.pdf
+ 
 ### Электропитание
 
 Диапазон электропитания SIM800L составляет от 3,4 В до 4,4 В. Рекомендуемое напряжение - 4,0 В. Источник питания должен обеспечивать ток до 2 А. Вход VBAT настоятельно рекомендуется шунтировать конденсатором с низким внутренним сопротивлением (low ESR, equivalent series resistance), например, 100 мкФ.
@@ -77,6 +81,6 @@ VOL      -    -   0.4   V
 VOH     2.4  2.8   -    V 
 ```
 
-Пример соединения между модулем DCE (SIM800L) и DTE 3,3 В.
+Рекомендуемое соединение между модулем DCE (SIM800L) и DTE 3,3 В.
 
 ![serialInterface](images/serialInterface.jpg)
