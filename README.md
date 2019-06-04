@@ -22,6 +22,28 @@
 - https://simcom.ee/documents/SIM800L/SIM800L%28MT6261%29_Hardware%20Design_V1.01.pdf
  
 - https://simcom.ee/documents/SIM800H/SIM800%20Series_AT%20Command%20Manual_V1.10.pdf
+
+### SIM800L GSM Module Pinout
+
+- `NET` is a pin where you can solder Helical Antenna provided along with the module.
+
+- `VCC` supplies power for the module. This can be anywhere from 3.4V to 4.4 volts. An external power source like Li-Po battery or DC-DC buck converters rated 3.7V 2A would work.
+
+- `RST` (Reset) is a hard reset pin. If you absolutely got the module in a bad space, pull this pin low for 100ms to perform a hard reset.
+
+- `RxD` (Receiver) pin is used for serial communication.
+
+- `TxD` (Transmitter) pin is used for serial communication.
+
+- `GND` is the Ground Pin and needs to be connected to GND pin on the Arduino.
+
+- `RING` pin acts as a Ring Indicator. It is basically the ‘interrupt’ out pin from the module. It is by default high and will pulse low for 120ms when a call is received. It can also be configured to pulse when an SMS is received.
+
+- `DTR` pin activates/deactivates sleep mode. Pulling it HIGH will put module in sleep mode, disabling serial communication. Pulling it LOW will wake the module up.
+
+- `MIC±` is a differential microphone input. The two microphone pins can be connected directly to these pins.
+
+- `SPK±` is a differential speaker interface. The two pins of a speaker can be tied directly to these two pins.
  
 ### Электропитание
 
